@@ -1,0 +1,652 @@
+/*font
+	font-family: 'Roboto', sans-serif;
+*/
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+/*common code start*/
+html{
+	font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+	width:100%;
+	height:100%;
+}
+.container{
+	width: 85%;
+	height:100%;
+	margin: 0px auto;
+}
+.d-flex{
+	display: flex;
+	flex-direction: row;
+}
+a{
+	text-decoration:none;
+}
+a span{
+	display: inline-block;
+}	
+ul li{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p{
+	margin: 0px; 
+	padding: 0px;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.title{
+	position: relative;
+}
+.title::after{
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 3px;
+	background: black;
+	bottom: 0px;
+	left: 0px;
+}
+/*common code end*/
+/*nav-section start*/
+.navber{
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 12px;
+	margin-bottom: 10px;
+}
+.navber .navber-brand{
+	font-size: 32px;
+	font-weight: 600;
+	color: rgba(250,,250,250,1);
+}
+
+.navber-brand {
+	color: #fff;
+}
+
+.navber-nav a{
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 5px;
+	margin: 10px 10px;
+	transition: .3s linear;
+	
+}
+.navber-nav a:hover{
+	color: #30C39E;
+}
+.banar{
+	background: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0.1)), url(image/Banner.jpg);
+	background-size: cover;
+	
+}
+.navber-brand i{
+	color: #30c39e;
+	padding: 20px;
+	
+}
+
+.navber-nav .active{
+	color: #30c39e;
+	
+}
+.poster h1{
+	font-weight: 800;
+	font-size: 65px;
+	letter-spacing:1.5px;
+	color: #30c39e;
+}
+.poster h3{
+	font-weight: 500;
+	font-size: 20px;
+	color: #fff;
+	line-height: 60px;
+}
+.poster p{
+	color: #fff;
+	font-weight: 400;
+	width:60%;
+	line-height: 32px;
+	font-size: 16px;
+	
+}
+.poster a{
+	color: #fff;
+	border: 1px solid white;
+	border-radius: 5 px;
+	margin-top: 20px;
+	padding: 15px 30px;
+	display: inline-block;
+	margin-bottom: 80px;
+}
+.poster a:hover{
+	background-color: #30C39E;
+	border: 0px;
+}
+/*nav section end*/
+/*about section start*/
+.about-section{
+	
+}
+.about-me h1.title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 54px;
+	color: #393333;
+	margin-bottom: 50px;
+	
+}
+.about-section{
+	justify-content: space-around;
+}
+.about-me .title::after{
+	left: 450px;
+} 
+.about-me{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: 600;
+	letter-spacing: 5px;
+	color: #333333;
+}
+.About-item .about-content h2{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 35px;
+	color:#333333;
+	letter-spacing: 1.2px,
+}
+.About-item .about-content p{
+	font-size: 15px;
+	font-weight:400;
+	color: #666666;
+	letter-spacing: .8px;
+	line-height: 30px;
+	padding: 5px 5px;
+	
+}
+.about-content .button a{
+	color: white;
+	border-radius: 5px;
+	padding: 10px 40px;
+	background-color: #1f8e9f;
+	font-size: 15px;
+	margin: 30px 5px;
+}
+.about-content .button a:hover{
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}	
+.about-item{
+	width:140%;
+	padding: 0px 0px;
+	margin: 0px 10px;
+	word-spacing: 3px;
+}
+.about-item .about-text h3{
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #333333;
+}
+.about-text p{
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #666666;
+}
+.about-item .about-text h3 span{
+	float: right;
+}
+/*service section start*/
+
+.service{
+	background-color: #30C39E; 
+	color: white;
+	margin: 50px 0px;
+	padding-top:70px;
+}
+.service-head{
+	text-align: center;
+	font-weight: 600;
+	font-size: 45px;
+	letter-spacing: 3.2px;
+	margin-bottom: 50px;
+}
+.service-head .title::after{
+	background: white;
+	left: 630px;
+}
+.service-content{
+	justify-content: space-around;
+	padding-bottom: 50px;
+}
+.service-item{
+	width: 30%;
+}
+.service-item h3{
+	font-weight: 600;
+	font-size: 20px;
+}
+.service-item h3 i{
+	padding-right: 15px;
+}
+.service-item p{
+	font-weight:400;
+	font-size: 16px;
+	line-height: 30px;
+	word-spacing: 1.2px;
+	padding-top: 20px;
+}
+
+/*service section end*/
+/*experience section start*/
+.ex-head{
+	padding-top: 80px;
+	text-align: center;
+	
+}
+.ex-head h1{
+	color: black;
+	font-size: 45px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.ex-head h1.title::after{
+	left: 500px;
+	margin-bottom: 20px;
+}
+.ex-item{
+	justisy-content:space-around;
+	
+}
+.ex-content{
+	background: #F8F9FA;
+	width: 50%;
+	padding: 0px 10px;
+	box-sizing: border-box
+}
+.ex-content h3{
+	color: #333333;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.ex-text span{
+	color: #30C39E;
+}
+.ex-content p{
+	color: #666666;
+	font-size: 16px;
+	font-weight: 400;
+	padding-left: 20px;
+	padding: 10px 0px;
+}
+
+.ex-text {
+	padding: 16px;
+}
+
+.ex-content span {
+	margin-left: 20px;
+}
+
+.ex-text h1{
+	font-weight: 600;
+	font-size:	20px;
+	font-color: #333333;
+	line-height: 24px;
+	
+}
+.ex-text p{
+	font-weight: 400;
+	font-size:	16px;
+	font-color: #666666;
+	line-height: 28px
+}
+
+/*experience section end*/
+
+/*blog section start*/
+.container-blog{
+	background: url(image/blog1.jpg);
+	background-size: cover;
+	color: white;
+	
+	
+}
+.blog-head {
+	
+}
+.blog-head .tittle::after{
+	position: absolute;
+	width: 100px;
+	height: 3px;
+	background: white;
+	bottom: 0px;
+	left: 485px;
+}
+.blog-head .title{
+	padding-top: 80px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-weight:600;
+	font-size: 45px;
+	color: #ffffff;
+	line-height: 54px;
+}
+.blog-head h1.title::after{
+	left: 520px;
+	background: white;	
+}
+	
+.blog-text h2{
+	font-weight:600;
+	font-size: 28px;
+	color: #ffffff;
+	line-height: 30px;
+}
+.blog-text p{
+	font-weight: 400px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #cccccc;
+}
+.content-card{
+	justify-content: space-between;
+	padding: 30px 10px;
+	box-sizing: border-box;
+}
+.blog-card{
+	width: 50%;
+	margin: 30px 10px;
+	background: white;
+	color: black;
+	padding: 20px;
+}
+
+
+.blog-card h2{
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 30px;
+	color: #333333;
+	margin: 10px 0px ;
+	
+	
+}
+.blog-card p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #999999;
+	margin-right: 20px;
+}
+.blog-card a{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #0a8ea0 ;
+}
+.blog-card .date{
+	margin-left: 30px ;
+	padding: 5px 10px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	color: white;
+	background-color: #30C39E;
+}
+
+/*blog section end*/
+/*project section start*/
+.contact-head h1{
+	
+}
+.pro-head{
+	padding-top: 80px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.pro-head h1{
+	color: black;
+	font-size: 45px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.pro-head h1.title::after{
+	left: 620px;
+}
+.pro-content{
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+.pro-poster{
+	width: 22%
+}
+
+/*project section start*/
+
+/*hire section start*/
+.hire-content{
+	padding: 50px 0px; 
+	
+}
+.hire-section{
+	background: #0A8EA0;
+	color: #fff;
+	text-align: center;
+	paddind:60px 80px;
+	margin: 50px 80px;
+}
+.hire-content h1{
+	font-size: 28px;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.hire-content p{
+	padding: 20px 100px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.hire-content a.mywork{
+	color: #1f8e9f;
+	border-radius: 5px;
+	padding: 10px 40px;
+	background-color: white;
+	font-size: 15px;
+	margin: 30px 5px;
+}	
+.hire-content a.mywork:hover{
+	color: #fff;
+	background: black;
+}
+.hire-content a.hireme{
+	color: white;
+	border-radius: 5px;
+	padding: 10px 40px;
+	background-color: black;
+	font-size: 15px;
+	margin: 30px 5px;
+	
+}
+.hire-content a.hireme:hover{
+	color: #1f8e9f;
+	background: white;
+	border: 1px solid black;
+}
+/*hire section end*/
+
+/*contact section start*/
+.contact-head h1{
+	color: black;
+}
+.contact-head h1.title{
+	color: black;
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 54px;
+	padding-bottom: 20px;
+	color: #cccccc;
+	text-align: center;
+}
+.contact-head h1.title::after{
+	left: 630px;
+	color: black;
+}	
+.contact-info{
+	justify-content: space-between;
+}
+
+.contact-item{
+	width:100%;
+	
+}
+.contact-item h3{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	padding-bottom: 20px;
+	color:#666666;
+}
+iframe{
+	width: 300px;
+	height: 280px;
+	border: 1px solid rgb(192,192,192);
+}
+.contact-form{
+	width: 100%;
+	
+}
+.contact-form h3{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 26px;
+	padding-bottom: 20px;
+	color:#333333;
+}
+.contact-form h3{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	padding-bottom: 20px;
+	color:#666666;
+}
+.from-main{
+	width: 50%;
+	padding: 10px 10px;
+}
+
+.form-sub button.submission{
+	color: white;
+	border-radius: 5px;
+	padding: 10px 0px;
+	background-color:#1f8e9f;
+	font-size: 15px;
+	margin-top: 60px 0px;
+}
+
+.intro .name{
+	margin-top: 20px;
+	padding: 0px 5px 50px 0px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #333333;
+	margin-left: 5px;
+}
+.form-sub button.submission:hover{
+	color: black;
+	background: white;
+}
+.form-sub .common{
+	padding: 20px 80px 20px 0px;
+	margin: 30px 15px 0px 0px;
+	width:180%;
+	
+}
+.form-sub .mass{
+	padding:  10px 50px 50px 0px;
+	margin: 20px 15px 0px 0px;
+	width:180%;
+}	
+
+.form-sub button.submission{
+	padding: 10px 40px;
+	margin: 0px 0px;
+
+}
+.container i{
+	color: #30C39E;
+	margin-right: 10px;
+}
+
+
+/*contact section end*/
+
+/*footer section start*/
+
+.footer-section{
+	background: #212529;
+	color: #fff;
+	text-align: center;
+	paddind:100px 100px;
+	height: 500%;
+	width: 100%;
+	
+}
+.footer-info{
+	padding: 80px 0px;
+	
+}
+.footer-icon{
+	justify-content: space-between;
+	display: inline-block;
+	
+}
+.footer_info a{
+	border: 1px solid black;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 10px 10px;	
+}
+.footer_info{
+	padding-left: 600px;
+}
+ul li a{
+	justify-content: space between;
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+	color:#917B4E;
+	background: #222222;
+	
+}
+.button p{
+	font-weight: 400;
+	font-size: 15px;
+	color: #999999;
+}
+.button a{
+	margin-top: 50px;
+	padding: 30px;
+}
+.from-main{
+	width: 100%;
+}
+/*footer section end*/
